@@ -1,6 +1,6 @@
 import { useState } from "react";
 import NoProjectSelected from "./components/NoProjectSelected";
-import ProjectsSiderbar from "./components/ProjectsSidebar";
+import ProjectsSidebar from "./components/ProjectsSidebar";
 import NewProject from "./components/NewProject";
 import SelectedProject from "./components/SelectedProject";
 
@@ -83,7 +83,7 @@ function App() {
 
   return (
     <main className="h-screen my-8 flex gap-8">
-      <ProjectsSiderbar
+      <ProjectsSidebar
         onSelectProject={handleSelectProject}
         onStartAddProject={handleStartAddProject}
         projects={projectsState.projects}
