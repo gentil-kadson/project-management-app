@@ -22,7 +22,8 @@ export default function NewTask({ onAdd }) {
       />
       <button
         onClick={handleClick}
-        className="text-stone-700 hover:text-stone-950"
+        className="text-stone-700 hover:text-stone-950 disabled:text-gray-500"
+        disabled={!enteredTask}
       >
         Add Task
       </button>
